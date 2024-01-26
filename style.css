@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+   font-size: 62.5%;
+}
+main{
+text-align: center;
+animation: fade-up 0.5s;
+}
+.tudo{
+   
+    
+}
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px); scale: (1);
+    }
+}
+
+h1{
+    font-size: 6em;
+    text-align: center;
+    color: white;
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   padding-top: 11%;
+    
+}
+img{
+    width: 200px;
+    
+    border-radius: 5px;
+    
+}
+.a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    
+}
+#avatares{
+    display: inline-flexbox;
+    padding-top: 40px;
+    
+    
+}
+.div{
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 35px;
+}
+
+.div:hover{
+    outline: 3px solid grey;
+    border-radius: 5px;
+    padding-bottom: 2px;
+}
+#divbotao{
+padding-top: 6%;
+
+}
+#botao{
+    height: 50px;
+    width: 12%;
+    outline: 2px solid grey;
+    position: relative;
+    background-color: transparent;
+}
+#letrabotao{
+    cursor: pointer;
+            text-decoration: none;
+            background-color: transparent;
+            font-family: 'Inter', sans-serif;
+            
+            color: grey;
+            font-size: 1.8em;
+      
+}
+@media screen and (max-width: 480px) {
+    #divbotao{
+        padding-top: 6%;
+        }
+    #botao{
+        height: 50px;
+        
+        width: 300px;
+        outline: 2px solid grey;
+        position: relative;
+        background-color: transparent;
+        white-space: normal !important;
+    }
+}

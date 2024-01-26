@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    animation: fade-up 0.5s;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px); scale: (1);
+    }
+}
+
+.banner{
+
+    background-image: linear-gradient( 
+        to bottom,
+         rgba(0,0,0, 0.8) 0%,
+         rgba(0,0,0, 0.2) 20%,
+         rgba(20,20,20, 0.2) 80%,
+         rgba(10,10,10, 1) 100% ),
+
+     url(img/peakpx.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin: auto;
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    background-image: rgb(0, 0, 0, 1);
+   
+  
+}
+.header.scroll{
+    background-color: #000000;
+}
+
+/*icones inicio*/
+.tudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: .83rem;
+}
+.tudo .netflixlogo{
+    width: 120px;
+    padding-left: 3rem;
+}
+.tudo ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-left: 2.5rem;
+   
+}
+.tudo ul li{
+    padding-right: .9rem;
+   
+}
+/*fim icones inicio*/
+
+/*icones final*/
+.tudo  a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.tudo i{
+    color: #ffffff;
+   align-items: center;
+   align-content: center;
+   
+}
+.iconesfinal .bi {
+    width: 3rem;
+    
+}
+.iconesfinal .bi-bell{
+   font-size: 1.4rem;
+}
+.tudo .imgavatar{
+    width: 2rem;
+    border-radius: 4px;
+    margin-right: .2rem;
+}
+
+.tudo .itemleft{
+    display: inline-flex;
+    
+}
+.tudo .itemright{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1rem;
+   align-content: space-between;
+   justify-content: center;
+   justify-items: center;
+  
+    
+}
+
+
+ /* buscar */
+.buscarbox{
+    width: 30px;
+    height: 35px;
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    margin-right: 20px;
+    transition: .7s;
+    
+   }
+   .buscarbox.ativar{
+       width: 280px;
+       height: 35px;
+       border: 0.3px solid #FFFFFF ;
+       background-color: #000000;
+       
+       
+   }
+   .lupabuscar{
+       min-width: 30px;
+       
+       display: flex;
+       align-items: center;
+       cursor: pointer;
+    color: white;
+    justify-content: left;
+    margin-left: 5px;
+    
+   }
+   .buscarbox .lupabuscar i{
+       font-size: 23px;
+   }
+   .buscarbox .inputbuscar{
+   position: absolute;
+   left: 40px;
+   width: 100%;
+   height: 100%;
+   line-height: 35px;
+   }
+   .buscarbox .inputbuscar input{
+       border: 0;
+       outline: 0;
+       font-size: .87rem;
+       background-color: transparent;
+       color: #FFFFFF;
+       
+   }
+
+   /*fim buscar*/
+   
+   .tudo .iconesfinal{
+   
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ .tudo .iconesfinal a{
+    margin-right: 20px;
+ }
+ 
+
+ /*fim icones final */
+
+
+ /*titulo do banner*/
+
+ .banner .titlebanner{
+    color: white;
+    display: flexbox;
+    justify-content: start;
+    padding: 27rem 5rem;
+    text-shadow: 0.58px 0px 10px black;
+   
+    
+ }
+
+ .banner .titlebanner .title h1{
+    font-size: 4rem;
+ }
+ .banner .titlebanner .title h2{
+    font-weight: 500;
+    color: white;
+ }
+.botaoplay, .botaoinf{
+    display: inline-flex;
+    width: auto;
+    padding: 10px 15px;
+    margin-top: 1.8rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    
+   
+ }
+ .botaoinf{
+    background-color: rgba(88, 88, 88, 0.87) ;
+    margin-left: 10px;
+    color: white;
+ }
+ .botaoplay i, .botaoinf i{
+    font-size: 2.3rem;
+    
+ }
+.botaoinf i{
+    padding-right: 10px;
+    color: white;
+}
+
+.category{
+    padding: 0rem 4rem;
+    color: white;
+    background-color: transparent;
+    translate: 0px -270px;
+   
+}
+#categoryum{
+    padding-top: 5%;
+}
+.category span{
+    font-size: 2rem;
+    margin-left: 1rem;
+   
+}
+.slider{
+   margin-top: 10px;
+ 
+}
+.slider .movie{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-left: .50%;
+    
+    
+    
+}
+.movie img{
+    width: 283px;
+    border: 0px;
+    border-radius: 3px;
+}
+.div{
+    width: 100%;
+    height: 100%;
+    position: static;
+}
+
+.footer{
+    
+    margin: 350px  auto  ;
+    width: 50%;
+}
+
+.footer .social i{
+    color: white;
+   font-size: 1.5rem;
+   font-weight: 200;
+   margin-left: 3%;
+   
+   
+}
+.footer .social{
+   
+}
+.flex{
+    display: flex;
+    padding-bottom: 80px;
+   
+    margin-top: 30px;
+}
+.flex .info{
+    display: flex;
+   
+    
+}
+.flex .info ul li{
+ color: grey;
+ font-size: .80rem;
+ list-style: none;
+ padding-right: 30px;
+ margin-bottom: 20px;
+}
+.flex .info ul{
+    width: 100%;
+    margin-right: 50px;
+}
